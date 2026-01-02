@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    display: flex;
+    padding: 60px 8%;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+}
+
+.tagline {
+    color: #DF6951;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 15px 0;
+}
+
+.cta-btn {
+    background: #F1A501;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.services,
+.destinations,
+.steps,
+.testimonials {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.subtitle {
+    color: #5E6282;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card,
+.dest-card {
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.dest-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.brand-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 8%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-row img {
+    height: 35px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.brand-row img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.newsletter {
+    background: #f7f8fd;
+    margin: 40px 8%;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.footer {
+    padding: 40px 8%;
+    border-top: 1px solid #eee;
+}
+
+.footer-cols {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar,
+    .hero,
+    .flex-container,
+    .footer-cols {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
